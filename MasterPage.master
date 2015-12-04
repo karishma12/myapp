@@ -1,0 +1,97 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_4azutsl3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Public Grievance System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--imports the main css file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!--imports prettyPhoto css file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/prettyPhoto.css" />
+    <!--imports Nivo Slider css file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/nivo-slider.css" />
+    
+
+    <!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header" class="pattern-1">
+        <!-- end header-inner -->
+        <div id="header-inner">
+            <div id="logo">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo12.png" />
+                <div id="title" >
+                    <h1 >
+                        <a href="Homepage.aspx"><span class="auto-style1" style="font-size:45px ">Public Grievance</span> </a></h1>
+                    <p class="auto-style2" style="font-size:15px;width:350px">
+                        Redress and Monitoring System</p>
+                </div>
+                <!-- end title -->
+            </div>
+            <!-- end logo -->
+            <ul id="navigation">
+                <li style="padding:6px;"><a class="active-nav" href="Homepage.aspx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home  </a>
+                </li>
+                <li style="padding:6px;"><a class="active-nav" href="Login.aspx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Login  </a>
+                   
+                </li>
+                
+                
+                <li style="padding:6px;"><a class="active-nav" href="About.aspx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About  </a>
+                </li>
+                <li style="padding:6px;"><a class="active-nav" href="ContactUs.aspx">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact </a>
+                </li>
+            </ul>
+            <!-- end navigation -->
+            <div class="clear">
+            </div>
+            <!-- end clearfix -->
+        </div>
+    </div>
+    <!-- end header -->
+    
+    
+    
+    <div id="wrapper">
+        <div class="separator">
+        </div>
+        <div class="full-width">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="separator">
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!-- end wrapper -->
+    <div id="footer" class="pattern-1">
+        <div class="clear">
+        </div>
+        <div id="footer-bottom-content">
+            <div id="footer-logo">
+                <h6>
+                    <a href="#" style="font-family:sans-serif">THIS IS THE OFFICIAL GRIEVANCE PORTAL OF GOVT.OF GUJARAT.</a></h6>
+                <p>
+                    Happy <span>To</span> Help <span>You !</span>&nbsp;&nbsp;<span><asp:Image ID="Image2" runat="server" ImageUrl="~/img/icon-heart-small.png" Height="12px" Width="12px"/></span></p>
+            </div>
+            <!-- end footer-logo -->
+            <div id="copyright">
+                <p>
+                    Copyright &copy; 2015. All rights reserved</p>
+            </div>
+            <!-- end copyright -->
+            <a href="#" class="scroll-top">Top</a>
+        </div>
+        <!-- end footer-bottom-content -->
+    </div>
+    <!-- end footer -->
+    </form>
+</body>
+</html>
